@@ -6,6 +6,7 @@ def server_program():  # именная функция
     # присваиваем переменной host строку, содержащую имя хоста компьютера,
     # на котором в настоящее время выполняется интерпретатор Python
     host = socket.gethostname()
+    print(host)
     port = 5000  # инициируем номер порта (5000)
     server_socket = socket.socket()  # создание сокета
     server_socket.bind((host, port))  # связываем сокет с хостом и портом
